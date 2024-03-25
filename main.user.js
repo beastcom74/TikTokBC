@@ -7,6 +7,7 @@
 // @match        https://www.tiktok.com/
 // @updateURL    https://github.com/beastcom74/TikTokBC/raw/main/main.user.js
 // @downloadURL  https://github.com/beastcom74/TikTokBC/raw/main/main.user.js
+// @run-at document-start
 // ==/UserScript==
 
 (function () {
