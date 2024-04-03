@@ -19,7 +19,7 @@
 
     async function TikTokBC() {
         if (!await GM_getValue('firstLaunch')) {
-            alert('\nTo menu TikTokBC, press Insert on the TikTok website')
+            alert('\nTo open the menu TikTokBC, press Insert on the TikTok website')
             GM_setValue('firstLaunch', 'yes')
         }
 
