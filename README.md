@@ -8,4 +8,4 @@
   <li>Hide unnecessary buttons, inscriptions - Removes unnecessary elements from the site in the author's opinion.</li>
 </ul>
 <hr>
-<img align="center" src="https://i.imgur.com/aXkMqsM.png"/>
+<img align="center" src="https://i.imgur.com/AStCO3r.png"/>
