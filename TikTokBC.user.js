@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TikTokBC
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0f
 // @description  Extension for TikTok site
 // @author       beastcom
 // @match        *://www.tiktok.com/*
@@ -105,7 +105,6 @@
         document.addEventListener('mousemove', onMouseMove);
         document.addEventListener('mouseup', onMouseUp);
     }
-
     function Always_Active(enabled) {
         if (!enabled) {
             Object.defineProperty(document, "hidden", {
@@ -130,9 +129,9 @@
             document.querySelector('#paint')?.remove()
             return
         }
-        pushCSS(".css-lg2ydv-PShowMoreText, .css-1847gtm-Button-StyledFollowButtonTux, .css-uou5c3-SpanIdentity, .css-1mc6yu2-DivPostButton, .css-111wj9f-DivPostButton {color: rgb(123, 177, 255) !important; border-color: rgb(123, 177, 255) !important}" +
+        pushCSS(".css-lg2ydv-PShowMoreText, .css-1847gtm-Button-StyledFollowButtonTux, .css-uou5c3-SpanIdentity, .css-1mc6yu2-DivPostButton, .css-111wj9f-DivPostButton, .css-1suycxx-DivPostButton {color: rgb(123, 177, 255) !important; border-color: rgb(123, 177, 255) !important}" +
             ".css-1uc6di1-ButtonIconContainer, .css-1g1i6o0-SupBadge, .css-m19yyn-DivContainer.e2ipgxl0, .css-12xzmck-DivSwitchWrapper, .css-dahjy1-DivVideoTagContainer {background: rgb(123, 177, 255) !important; color: rgb(0, 0, 0) !important}" +
-            ".css-l3thyc-StyledTopArrow.e2ipgxl1, path[d^=' M453.0360107421'], span[data-e2e='browse-like-icon'] > svg, .css-lcgx87-DivLikeWrapper-StyledLikeWrapper.ezxoskx1 > svg, .css-1tvtgfz-DivLikeIcon.ezxoskx2 > svg, .css-pfvupc-DivInputAreaContainer .public-DraftEditor-content, .css-1qkggn6-DivInputAreaContainer .public-DraftEditor-content, .css-1geqepl-InputElement, .css-13wenwg-InputElement {fill: rgb(123, 177, 255) !important; caret-color: rgb(123, 177, 255) !important}" +
+            ".css-l3thyc-StyledTopArrow.e2ipgxl1, path[d^=' M453.0360107421'], button[aria-pressed='true'] .css-6jak4n-SpanIconWrapper > svg, .css-lcgx87-DivLikeWrapper-StyledLikeWrapper.ezxoskx1 > svg, .css-1tvtgfz-DivLikeIcon.ezxoskx2 > svg, .css-pfvupc-DivInputAreaContainer .public-DraftEditor-content, .css-1qkggn6-DivInputAreaContainer .public-DraftEditor-content, .css-1geqepl-InputElement, .css-13wenwg-InputElement {fill: rgb(123, 177, 255) !important; caret-color: rgb(123, 177, 255) !important}" +
             ".css-q8xq8t-DivTipWrapper {color: rgb(0, 0, 0) !important}" +
             ".css-1obmd97-Button-StyledFollowButtonTux, .css-1pcikqk-Button {background-color: rgb(123, 177, 255) !important; border-color: rgb(123, 177, 255) !important; color: rgb(0, 0, 0) !important}", "paint")
     }
@@ -141,7 +140,6 @@
             document.querySelector('#remove_useless')?.remove()
             return
         }
-
         pushCSS(".css-18e9sac-ButtonGetAppText, .css-1lepjzi-DivLinkContainer, .css-58kfjy-H4LinkListHeader, .css-ubixky-H4LinkListHeader, .css-24h4dh-DivEffectHouseEntranceContainer, .css-1hhoqzc-DivMentionButton, .css-965aro-DivMoreContainer, .css-a3jj4p-DivEmojiButton, .css-1rvr9ul-NavMainNavContainer, .css-labfmt-DivUserContainer::before, .css-1klbnj3-DivCopyLinkContainer.ehlq8k33" +
             ", li:has(a[href='/live']), li:has(a[href='/explore']), li:has(a[href='/friends']), li:has(a[href='/following']), li:has(a[data-e2e='nav-profile']), li:has(a[data-e2e='nav-foryou']), li[data-e2e='keyboard-shortcut-entrance'], li[data-e2e='feedback-entrance'], li[data-e2e='live-studio-entrance'], li[data-e2e='recharge-entrance'], li:has(path[d^='M9 11C9 8.23858']), div[data-e2e='browse-share-group'], .css-adnylo-DivShareActions, .css-xm2bgz-DivMentionButton, .css-kf05ch-DivEmojiButton, li:has(a[href^='https://www.tiktok.com/live/creators?enter_from=portrait&lang']) {display: none; !important}" +
             ".css-bt9hlt-DivWrapper {margin-top: -25px !important}", "remove_useless")
